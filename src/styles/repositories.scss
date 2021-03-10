@@ -6,25 +6,30 @@ section.repository-list {
         font-size: 32px;
         color: #fff;
         position: relative;
-
-        h1::after{
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100px;
-            height: 2px;
-            background-color: #8257e6;
-        }
     }
     ul{
         display: flex;
         list-style: none;
         li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2px 5px;
+
             margin: 20px;
+            max-width: 200px;
+            height: 200px;
+            border: 1px solid #999;
+            border-radius: 15px;
+            text-align: center;
+
+            strong{
+                color: #0c9122;
+            }
             p{
                 font-size: 14px;
-                color: #444;
+                color: #999;
                 margin-top: 8px;
             }
             a{
