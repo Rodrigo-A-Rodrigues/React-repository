@@ -1,13 +1,8 @@
-import { Counter } from './components/Counter';
+import './styles/global.scss';
 import { RepositoryList } from './components/RepositoryList';
 
-import './styles/global.scss';
-
 export function App() {
-    return( 
-        <>
-            <RepositoryList />
-            <Counter />
-        </>    
+    return(   
+        <RepositoryList/>
     )
 }

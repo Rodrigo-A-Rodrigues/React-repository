@@ -1,3 +1,6 @@
+import React from "react";
+import { Counter } from "./Counter";
+
 interface RepoasitoryItemProps {
     repository: {
         name: string;
@@ -15,6 +18,7 @@ export function RepoasitoryItem(props: RepoasitoryItemProps) {
             <a href={props.repository.html_url}>
                 Acessar repositório
             </a>
+            <Counter />
         </li>
     )
 }
